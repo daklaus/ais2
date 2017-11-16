@@ -1,0 +1,4 @@
+*.o
+server
+virtualenv/
+.idea/
