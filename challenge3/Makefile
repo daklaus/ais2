@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-m32 -fno-stack-protector -D_FORTIFY_SOURCE=0
+CFLAGS=-m32 -g -fno-stack-protector -D_FORTIFY_SOURCE=0
 LDFLAGS=-m32
 CXXFLAGS=-m32
 CPPFLAGS=-m32
@@ -19,6 +19,6 @@ bankROPery: bankROPery.c libinetsec.so
 	gcc -L./ -Wl,-rpath=./ -Wall -o bankROPery bankROPery.c -linetsec
 
 run: bankROPery
-	LD_LIBRARY_PATH=./ ./bankROPery 8080
+	LD_LIBRARY_PATH=./ ./bankROPery 2000
 
 

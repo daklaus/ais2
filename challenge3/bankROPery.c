@@ -26,7 +26,7 @@
 
 #define LOGFILE "./banking.log"
 
-#define FORK 
+//#define FORK 
 
 FILE *f;
 int newsockfd;
