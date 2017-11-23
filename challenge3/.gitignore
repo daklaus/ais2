@@ -4,3 +4,4 @@ virtualenv/
 .idea/
 libinetsec.so
 bankROPery
+banking.log
